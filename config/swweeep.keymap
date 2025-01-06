@@ -68,7 +68,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &mo LEF     &kp ESC    &kp SPACE     &kp ENTER   &kp BSPC   &mo RIG
+                                 &mo LEF     &kp LSHFT  &kp SPACE      &kp ENTER  &kp BSPC   &mo RIG
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };

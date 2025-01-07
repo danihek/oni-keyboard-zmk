@@ -62,13 +62,13 @@
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-            &kp A      &kp S      &kp D       &kp  F     &kp G          &kp H     &kp J       &kp K      &kp L     &kp SQT
+        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ DELETE   │
+            &kp A      &kp S      &kp D       &kp  F     &kp G          &kp H     &kp J       &kp K      &kp L     &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │   CTRL   │  ALT     │ ESC      │
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp LCTRL  &kp LALT   &kp ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &mo LEF     &kp LSHFT  &kp SPACE      &kp ENTER  &kp BSPC   &mo RIG
+                                 &mo LEF     &kp LSHFT  &kp SPACE      &kp ENTER  &kp LGUI   &mo RIG
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -79,13 +79,13 @@
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │BACKSPACE │
-            WHRML(A,          S,         D,         F)     &kp G          &kp H      WHRMR(J,        K,      L,       BSPC)
+        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ DELETE   │
+            &kp A      &kp S      &kp D       &kp  F     &kp G          &kp H     &kp J       &kp K      &kp L     &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
+        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │   CTRL   │  ALT     │ ESC      │
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp LCTRL  &kp LALT   &kp ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &mo LEF     &kp LSHFT  &kp SPACE     &kp ENTER  &kp BSPC    &mo RIG
+                                 &mo LEF     &kp LSHFT  &kp SPACE      &kp ENTER  &kp LGUI   &mo RIG
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -96,8 +96,8 @@
         //│ 1        │  2       │  3       │  4       │  5       │   │ 6        │ 7        │ 8        │ 9        │   0      │
             &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ TAB      │ CapsLock │ PrintSc  │  INSERT  │ DELETE   |   |  LEFT    │ DOWN     │ UP       │ RIGHT    │          │
-            &kp TAB   &kp CAPS   &kp PSCRN  &kp INS     &kp DEL        &kp LARW    &kp DARW   &kp UARW   &kp RARW   &trans
+        //│ TAB      │ CapsLock │ PrintSc  │  INSERT  │          |   |  LEFT    │ DOWN     │ UP       │ RIGHT    │  DELETE  │
+            &kp TAB   &kp CAPS   &kp PSCRN  &kp INS     &trans        &kp LARW    &kp DARW   &kp UARW   &kp RARW   &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
             &trans    &trans     &trans     &trans      &trans         &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
@@ -113,11 +113,11 @@
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  "       │  [       │  {       │  (       │          │   │   /      │  -       │  =       │     :    │  ;       │
-            &kp DQT    &kp LBKT   &kp LBRC   &kp LPAR   &trans         &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
+        //│  "       │  [       │  {       │  (       │    ?     │   │   /      │  -       │  =       │     :    │  ;       │
+            &kp DQT    &kp LBKT   &kp LBRC   &kp LPAR   &kp QMARK     &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  '       │  ]       │  }       │  )       │          │   │    \     │  _       │  +       │  │       │   ?      │
-            &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR   &trans         &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
+        //│  '       │  ]       │  }       │  )       │    |     │   │    \     │  _       │  +       │          │          │
+            &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR  &kp PIPE       &kp BSLH   &kp UNDER  &kp PLUS    &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                   &trans     &trans     &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯

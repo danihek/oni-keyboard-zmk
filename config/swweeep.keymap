@@ -128,7 +128,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │TOGGLEOUT │ WINDOWS  │ GAMING   │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &out DEF   &tog WIN   &tog GAM    &trans   &sys_reset
+           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &tog DEF   &tog WIN   &tog GAM    &trans   &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
           &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader

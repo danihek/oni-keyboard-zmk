@@ -20,6 +20,16 @@
     continue-list = <UNDERSCORE MINUS>;
 };
 
+&mmv {
+   time-to-max-speed-ms = <680>;
+   acceleration-exponent=<2>;
+};
+
+&mwh {
+    compatible = "zmk,behavior-mouse-wheel";
+    #binding-cells = <1>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";

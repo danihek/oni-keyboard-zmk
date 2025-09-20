@@ -25,11 +25,6 @@
    acceleration-exponent=<2>;
 };
 
-&mwh {
-    compatible = "zmk,behavior-mouse-wheel";
-    #binding-cells = <1>;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
